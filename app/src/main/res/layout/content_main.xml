@@ -12,8 +12,37 @@
     tools:context="br.com.trainning.cadastro2.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alo Mundo!" />
+        android:id="@+id/nomeProduto"
+        android:hint="Nome do Produto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeCategoria"
+        android:hint="Categoria"
+        android:layout_below="@+id/nomeProduto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/nomeProduto"
+        android:layout_alignEnd="@+id/nomeProduto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Código de Barras"
+        android:id="@+id/codigoBarras"
+        android:layout_below="@+id/nomeCategoria"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/nomeCategoria"
+        android:layout_alignEnd="@+id/nomeCategoria" />
 </RelativeLayout>
